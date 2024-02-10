@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		h2{
+			color:black;
+		}
+	</style>
+</head>
+<body background-color="pink">
+	<h2>Favourite Movie Guesser</h2>
+
+	<h1>Congratulation & celebration</h1>
+	
+	<script>
+		let favMovie="3idiots";
+		let guess=prompt("Guess my Favourite movie");
+		
+		while((guess!=favMovie)){
+			if(guess=="quit"){
+				alert("You quit");
+				break;
+			}
+			alert("Nope");
+			guess=prompt("Guess again");
+		}
+		if(guess==favMovie){
+			alert("Congratulation");
+		}
+	</script>
+</body>
+</html>

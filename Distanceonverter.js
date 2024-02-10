@@ -1,0 +1,10 @@
+let distance, m, cm, inch;
+distance=3;
+m=distance*1000;
+cm=m*100;
+inch=cm/2.54;
+ft=inch/12;
+console.log("distance in meter is : ",m);
+console.log("distance in centimeter is : ",cm);
+console.log("distance in inch is : ",inch);
+console.log("distance in feet is : ",ft);

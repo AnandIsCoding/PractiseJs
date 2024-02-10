@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Random Number Guesser</h2>
+	<script>
+		let max=prompt("Enter the Maximum number so that I can generate numbers between 1 & max");
+		let random=(Math.floor(Math.random()*max))+1;
+		let guess=prompt("Let's play, Guess the random number");
+		while(true){
+			if(guess==random){
+			alert("Congrats you are right");
+			console.log("you are right, random number was ",random);
+			break;
+			}
+			if(guess=="quit"){
+				alert("You are quiting");
+				break;
+			}
+			if(guess<random){
+				alert("your entered random number is too small")
+			}
+			if(guess>random){
+				alert("Your entered random number is too large");
+			}
+			guess=prompt("guess the random number again");
+		// }
+		// let name=prompt("Enter your name ");
+		// let age=prompt("Enter your age ");
+		// console.log(`Hi ${name} you are ${years} old`);
+		
+		
+		}
+	</script>
+</body>
+</html>
